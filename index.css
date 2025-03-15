@@ -9,7 +9,7 @@
 body {
     text-align: justify;
     overflow-x: hidden; /* 가로 스크롤 방지 */
-    /*padding: 80px 50px 50px; /* 위 80px, 좌우 50px, 아래 50px 
+    padding: 80px auto; /* 위 80px
     margin: 20px; /* 바깥쪽 여백 */
 }
 
@@ -81,12 +81,6 @@ header nav ul li a {
 
 header nav ul li a:hover {
     color: var(--cinnabar);
-}
-
-/* ✅ 헤더 높이만큼 본문이 아래로 시작하도록 여백 추가 */
-.content {
-    margin-top: 80px;
-    
 }
 
 /* ✅ 본문 레이어 스타일  */
