@@ -7,8 +7,7 @@
 
 /* 기본 설정 */
 body {
-    margin: 0;
-    padding: 80px 50px 50px;
+    margin: 20px;
     text-align: justify;
     overflow-x: hidden; /* 가로 스크롤 방지 */
 }
@@ -86,6 +85,8 @@ header nav ul li a:hover {
 /* ✅ 헤더 높이만큼 본문이 아래로 시작하도록 여백 추가 */
 .content {
     margin-top: 80px;
+    padding: 80px 50px 50px;
+
 }
 
 /* ✅ 본문 레이어 스타일 (흰색 60% 투명도) */
