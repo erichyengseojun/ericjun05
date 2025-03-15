@@ -98,9 +98,10 @@ header nav ul li a:hover {
     line-height: 1.6;
     word-wrap: break-word;
 }
-.module {
-    padding: 80px 50px 50px;
-    margin: 20px;
+/* `header`와 `footer`를 제외하고 `main`, `section`에 적용 */
+main, section {
+    padding: 80px 50px 50px; /* 위 80px, 좌우 50px, 아래 50px */
+    margin: 20px; /* 바깥쪽 여백 */
 }
 
 /* ✅ 전체 페이지가 정상적으로 스크롤되도록 설정 */
