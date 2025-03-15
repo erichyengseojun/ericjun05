@@ -9,7 +9,7 @@
 body {
     text-align: justify;
     overflow-x: hidden; /* 가로 스크롤 방지 */
-    padding: 160px auto; /* 위 160px
+    padding: 60px; /*
     margin: 20px; /* 바깥쪽 여백 */
 }
 
@@ -107,13 +107,13 @@ html, body {
     min-height: 100vh; /* 페이지가 짧아도 풋터가 화면 아래 유지됨 */
 }
 
-/* ✅ 풋터 수정 (스크롤해야 보이도록 & 화면 맨 아래 정렬) */
 footer {
-    width: 100vw;
-    max-width: 100%;
+    width: 100vw; /* 전체 뷰포트 너비 */
+    max-width: 100%; /* 불필요한 max-width 제한 제거 */
     background: white;
     text-align: left;
-    padding: 20px;
+    padding: 20px; /* 내용과의 여백 유지 */
     border-top: 2px solid gainsboro;
-    margin-top: auto; /* 본문이 끝난 후 화면 하단에 고정됨 */
+    margin: 0; /* 바깥쪽 여백 제거 */
+    box-sizing: border-box; /* 패딩이 너비에 포함되도록 설정 */
 }
