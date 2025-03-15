@@ -98,6 +98,7 @@ header nav ul li a:hover {
     margin: 0 auto;
     line-height: 1.6;
     word-wrap: break-word;
+    padding: 30px 40px;
 }
 
 /* ✅ 전체 페이지가 정상적으로 스크롤되도록 설정 */
