@@ -9,7 +9,7 @@
 body {
     text-align: justify;
     overflow-x: hidden; /* 가로 스크롤 방지 */
-    padding: 80px auto; /* 위 80px
+    padding: 160px auto; /* 위 160px
     margin: 20px; /* 바깥쪽 여백 */
 }
 
