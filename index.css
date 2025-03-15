@@ -119,6 +119,7 @@ html, body {
 /* ✅ 풋터 수정 (스크롤해야 보이도록 & 화면 맨 아래 정렬) */
 footer {
     width: 100vw;
+    max-width: 100%;
     background: white;
     text-align: left;
     padding: 20px;
