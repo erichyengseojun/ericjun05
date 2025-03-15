@@ -92,7 +92,6 @@ header nav ul li a:hover {
     position: relative;
     z-index: 10;
     background: rgba(255, 255, 255, 0.9); 
-    padding: 80px 50px 50px;
     max-width: 80vw;
     margin: 0 auto;
     line-height: 1.6;
