@@ -1,0 +1,114 @@
+:root {
+    --forest-green: #103a00;
+    --cinnabar: #ce3c10;
+    --yello-green: #c8b640;
+    --green: #135600;
+}
+
+/* 기본 설정 */
+body {
+    margin: 0;
+    padding: 0;
+    text-align: justify;
+    overflow-x: hidden; /* 가로 스크롤 방지 */
+}
+
+/* 고정된 배경 레이어 */
+.fixed-layer {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100vh;
+    background: url('resource/img/home.jpg') no-repeat center/cover;
+    z-index: -1; /* 다른 콘텐츠 뒤로 배치 */
+}
+
+/* ✅ 고정된 헤더 수정 */
+header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background: white;
+    z-index: 1000;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+/* 헤더 내부 요소 스타일 */
+header div {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+header img {
+    max-height: 60px;
+}
+
+header h2 {
+    font-size: 1.5em;
+    margin: 0;
+}
+
+header nav ul {
+    display: flex;
+    flex-direction: row;
+    gap: 15px;
+    list-style-type: none;
+    font-size: large;
+    padding: 0;
+    margin: 0;
+}
+
+header nav ul li a {
+    text-decoration: none;
+    color: black;
+}
+
+header nav ul li a:hover {
+    color: var(--cinnabar);
+}
+
+/* ✅ 헤더 높이만큼 본문이 아래로 시작하도록 여백 추가 */
+.content {
+    margin-top: 80px;
+}
+
+/* ✅ 본문 레이어 스타일 (흰색 60% 투명도) */
+.content {
+    position: relative;
+    z-index: 10;
+    background: rgba(255, 255, 255, 0.9); /* 투명도 60% */
+    padding: 80px 50px 50px;
+    max-width: 80vw;
+    margin: 0 auto;
+    line-height: 1.6;
+    word-wrap: break-word;
+}
+
+/* ✅ 전체 페이지가 정상적으로 스크롤되도록 설정 */
+html, body {
+    height: 100%;
+}
+
+/* ✅ 레이아웃을 정리하기 위한 `.wrapper` */
+.wrapper {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh; /* 페이지가 짧아도 풋터가 화면 아래 유지됨 */
+}
+
+/* ✅ 풋터 수정 (스크롤해야 보이도록 & 화면 맨 아래 정렬) */
+footer {
+    width: 100%;
+    background: white;
+    text-align: left;
+    padding: 20px;
+    border-top: 2px solid gainsboro;
+    margin-top: auto; /* 본문이 끝난 후 화면 하단에 고정됨 */
+}
