@@ -101,6 +101,8 @@ header nav ul li a:hover {
 /* ✅ 전체 페이지가 정상적으로 스크롤되도록 설정 */
 html, body {
     height: 100%;
+    padding: 80px 50px 50px; /* 위 80px, 좌우 50px, 아래 50px */
+    margin: 20px; /* 바깥쪽 여백 */
 }
 
 /* ✅ 레이아웃을 정리하기 위한 `.wrapper` */
